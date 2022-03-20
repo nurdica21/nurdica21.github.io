@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<button id="rule" class="htp">How to PLAY!</button>
+
+<body>
+
+    
+    <div class="rules"><h4>Rules: </h4>
+        <p> Players roll the number from 1-6 randomly by clicking "Roll Number" button. If a player gets 1 than it is other player turn. By clicking "Hold points" button, player saves points and he can not lose those points anymore. Points in Roll Number stacks as long as you roll higher than 1, after you get 1 it is other player turn and you get nothing.</p></div>
+    <div class="wrapper">
+        <div class="player-1">
+            <div class="player-1_name" id="name-0">Player 1</div>
+            <div class="player-1_score" id="score-0">0</div>
+            <div class="player-1-current-box">
+                <div class="player-1_current">Current</div>
+                <div class="player-1_current-score" id="current-0">0</div>
+            </div>
+        </div>
+        
+        <div class="dice">
+            <div class="dice-name">Rolled Number</div>
+            <div class="dice-number" id="dice">0</div>
+        </div>
+        
+
+        <div class="player-2">
+            <div class="player-2_name" id="name-1">Player 2</div>
+            <div class="player-2_score" id="score-1">0</div>
+            <div class="player-2-current-box">
+                <div class="player-2_current">Current</div>
+                <div class="player-2_current-score" id="current-1">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn-new-game">New Game</button>
+        <button class="btn-roll">Roll Number</button>
+        <button class="btn-hold">Hold points</button>
+    </div>
+        <div id="winer" class="winner"></div>
+    
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="howtoplay.js"></script>
+<script src="javascript.js"></script>
+</body>
+
+</html>
