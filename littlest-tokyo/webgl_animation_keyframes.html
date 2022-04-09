@@ -34,7 +34,7 @@
 		<script type="importmap">
 			{
 				"imports": {
-					"three": "https://nurdica21.github.io/littlest-tokyo/build/three.module.js"
+					"three": "/build/three.module.js"
 				}
 			}
 		</script>
@@ -94,7 +94,7 @@
 			loader.load( 'models/gltf/LittlestTokyo.glb', function ( gltf ) {
 
 				const model = gltf.scene;
-				model.position.set( 1, 2, 0 );
+				model.position.set( 1, 3, 0 );
 				model.scale.set( 0.01, 0.01, 0.01 );
 				scene.add( model );
 
@@ -119,8 +119,8 @@
 
 			};
 
-			const geometryFloor = new THREE.CylinderGeometry( 12, 5, 0.01, 100 );
-			const textureFloor = new THREE.TextureLoader().load( 'pijesak2.jpg' );
+			const geometryFloor = new THREE.CylinderGeometry( 5, 8, 2, 80 );
+			const textureFloor = new THREE.TextureLoader().load( 'textures/pijesak2.jpg' );
 			const materialFloor = new THREE.MeshBasicMaterial( { map: textureFloor, color:0x646341} );
 			const floor = new THREE.Mesh(geometryFloor,materialFloor);
 			
@@ -164,7 +164,7 @@
 						{
 							textureWidth: 512,
 							textureHeight: 512,
-							waterNormals: new THREE.TextureLoader().load( 'waternormals.jpg', function ( texture ) {
+							waterNormals: new THREE.TextureLoader().load( 'textures/waternormals.jpg', function ( texture ) {
 
 								texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 
